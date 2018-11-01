@@ -54,8 +54,100 @@
 // arr.map(function(item) {
 //     return item + 10;
 // });
-var arr = [1, 2, 3, 4, 5];
-var new_arr = arr.map(function (item) {
-  return item + 10;
-});
-console.log(new_arr); // ##### FIM EXERCÍCIO 3 #####
+// const arr = [1, 2, 3, 4, 5];
+// const new_arr = arr.map(item => item + 10);
+// console.log(new_arr);
+// // 3.2
+// // Dica: Utilize uma constante pra function
+// // const usuario = { nome: 'Diego', idade: 23 };
+// // function mostraIdade(usuario) {
+// //     return usuario.idade;
+// // }
+// // mostraIdade(usuario);
+// const usuario = { nome: 'Diego', idade: 23 };
+// const mostraIdade = (usuario) => {
+//     return usuario.idade;
+// }
+// console.log(mostraIdade(usuario));
+// // 3.3
+// // Dica: Utilize uma constante pra function
+// const nome = "Diego";
+// const idade = 23;
+// const mostraUsuario = (nome = 'Diego', idade = 18) => ({ nome, idade });
+// console.log(mostraUsuario(nome, idade));
+// console.log(mostraUsuario(nome));
+// // 3.4
+// const promise = () => {
+//     return new Promise(function(resolve, reject) {
+//         return resolve();
+//     })
+// }
+// ##### FIM EXERCÍCIO 3 #####
+// ##### EXERCÍCIO 4 #####
+// const empresa = {
+//     nome: 'Rocketseat',
+//     endereco: {
+//         cidade: 'Rio do Sul',
+//         estado: 'SC',
+//     }
+// };
+// const { nome, endereco: {cidade}, endereco: {estado} } = empresa;
+// console.log(nome); // Rocketseat
+// console.log(cidade); // Rio do Sul
+// console.log(estado); // SC
+// function mostraInfo(usuario) {
+//     return `${usuario.nome} tem ${usuario.idade} anos.`;
+// }
+// mostraInfo({ nome: 'Diego', idade: 23 })
+// function mostraInfo( { nome, idade } ) {
+//     return `${nome} tem ${idade} anos.`;
+// }
+// console.log(mostraInfo({ nome: 'Diego', idade: 23 }));
+// ##### FIM EXERCÍCIO 4 #####
+// ##### EXERCÍCIO 5 #####
+// const arr = [1, 2, 3, 4, 5, 6];
+// const [ x, ...y ] = arr;
+// console.log(x); // 1
+// console.log(y); // [2, 3, 4, 5, 6]
+// const soma = (...params) => {
+//     return params.reduce((total, next) => total + next);
+// };
+// console.log(soma(1, 2, 3, 4, 5, 6)); // 21
+// console.log(soma(1, 2)); // 3
+// const usuario = {
+//     nome: 'Diego',
+//     idade: 23,
+//     endereco: {
+//         cidade: 'Rio do Sul',
+//         uf: 'SC',
+//         pais: 'Brasil',
+//     }
+// };
+// const usuario2 = { ...usuario, nome: 'Gabriel' };
+// console.log(usuario2);
+// const usuario3 = { ...usuario, endereco: { cidade: 'Lontras' } };
+// console.log(usuario3);
+// ##### FIM EXERCÍCIO 5 #####
+// ##### EXERCÍCIO 6 #####
+// const usuario = 'Diego';
+// const idade = 23;
+// console.log('O usuário ' + usuario + ' possui ' + idade + ' anos');
+// const usuario = 'Diego';
+// const idade = 23;
+// console.log(`O usuário ${usuario} possui ${idade} anos`);
+// ##### FIM EXERCÍCIO 6 #####
+// ##### EXERCÍCIO 7 #####
+// const nome = 'Diego';
+// const idade = 23;
+// const usuario = {
+//     nome: nome,
+//     idade: idade,
+//     cidade: 'Rio do Sul',
+// };
+var nome = 'Diego';
+var idade = 23;
+var usuario = {
+  nome: nome,
+  idade: idade,
+  cidade: 'Rio do Sul'
+}; // ##### FIM EXERCÍCIO 7 #####
